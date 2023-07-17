@@ -1,26 +1,54 @@
 .btn {
   display: inline-flex;
   padding: 10px 20px;
-
+  font-family: $ff-roboto;
   color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  background-color: $color-transparent;
+  border: 4px solid $color-default-white ;
+  text-transform: uppercase;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
-
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    color: $color-secondary;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+  }
+
+  &--light-bg {
+    border: 2px solid $color-primary;
+    color: $color-primary;
+
+    &:disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $button;
+      color: $color-default-white;
+    }
+
+    &:active {
+      background-color: $button;
+      color: rgba(255, 255, 255, 0.69);
+    }
+
+
   }
 }

@@ -1,0 +1,148 @@
+.connection__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(
+    to right,
+    $color-primary 50%,
+    $color-default-white 50%
+  );
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    background: $color-default-white;
+  }
+}
+
+.connection__form {
+  padding: 56px 170px 68px 0;
+  padding-left: calc(50vw - 580px);
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1199 {
+    padding: 60px 130px 70px;
+    background-color: $color-primary;
+  }
+
+  @include vp-767 {
+    padding: 64px 15px 69px;
+  }
+}
+.connection__form h2 {
+  margin: 0;
+  color: $color-default-white;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 84.24px;
+  letter-spacing: 0.035em;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    padding-bottom: 15px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+line-height: 38px;
+padding-bottom: 17px;
+letter-spacing: 0.023em;
+  }
+}
+
+.connection__contact {
+  padding: 57px 76px 21px 120px;
+  border-top: 1px solid $color-primary;
+  font-family: $ff-roboto;
+
+  @include vp-1199 {
+    padding: 60px 102px 41px 134px;
+  }
+
+  @include vp-767 {
+    padding: 62px 15px 44px;
+  }
+}
+
+.connection__contact h2 {
+  margin: 0;
+  padding-bottom: 37px;
+  color: $color-primary;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.035em;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    padding-bottom: 34px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.connection__contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.connection__info-list {
+  padding-left: 60px;
+
+  @include vp-1199 {
+    padding-left: 47px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
+}
+
+.connection__item {
+  padding-bottom: 20px;
+}
+
+.connection__item h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  padding-bottom: 10px;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 5px;
+  }
+}
+
+.connection__info-item h3 {
+  padding-bottom: 3px;
+
+  @include vp-767 {
+    padding-bottom: 5px;
+  }
+}
+
+.connection__item p,
+.connection__item a {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27.422px;
+  }
+}

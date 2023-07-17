@@ -1,0 +1,99 @@
+.video__button {
+  position: absolute;
+  top: 34%;
+  right: 40%;
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  background-image: $video;
+  cursor: pointer;
+  user-select: none;
+
+  @include vp-1199 {
+    width: 52px;
+    height: 52px;
+    right: 40%;
+  }
+
+  @include vp-767 {
+    right: 42%;
+    top: 35%;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-image: none;
+    background-color: $color-default-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &:active {
+    scale: 0.9;
+  }
+
+  &:disabled {
+opacity: 0.4;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    top: -20%;
+    left: -18%;
+    border-radius: 50%;
+    background-image: $video-light;
+    mask: radial-gradient(circle 92px, $color-transparent 50%, #ffffff 50%);
+
+    @include vp-1199 {
+      width: 73px;
+      height: 73px;
+      mask: radial-gradient(circle 69px, $color-transparent 50%, #ffffff 50%);
+    }
+  }
+}
+
+svg {
+  transform: translate(3px, 2px);
+  color: $color-default-white;
+
+  @include vp-1199 {
+    transform: translate(3px, 1px);
+    width: 12px;
+    height: 12px;
+  }
+
+  @include vp-767 {
+    transform: translate(2px, 0.5px);
+  }
+}
+
+.video__button:hover svg {
+  color: $color-primary;
+}
+
+.video img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  @include vp-767 {
+    margin-top: 40px;
+  }
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+
+  @include vp-767 {
+    margin-top: 40px;
+    min-height: 167px;
+  }
+}
+

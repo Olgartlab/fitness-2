@@ -1,5 +1,8 @@
 // Colors
-// ---------------------------------
+
+$color-primary: #102654;
+$color-secondary: #103aae;
+$color-primary-light: rgba(16, 38, 84, 0.2);
 
 // Default
 
@@ -10,12 +13,31 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-neon-blue: #2c39f2;
+$color-torch-red: #ff1553;
+
+$color-black-russian: #030a1a;
+$color-sapphire: #102654;
+$color-sapphire-light: rgba(16, 38, 84, 0.50);
+$color-ghost-white: #f8f9fc;
+$color-gray-deco: rgba(120, 120, 120, 0.20);
+$color-crimson: #d10a42;
+$color-torch-red: #ed0233;
+$color-gray-shadow: rgb(232, 232, 232, 0.479);
+$color-gray-line: rgba(28, 51, 116, 0.20);
+$color-crimson-pale: rgba(209, 10, 66, 0.20);
+$color-cobalt: #0041ca;
+$color-resolution-blue:  #1C3374;
+
 
 // Gradient
+$text: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
+$button: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+$hero: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg, #003D85 360deg);
+$video: linear-gradient(45deg, #003d85,  #b80027);
+$video-light: linear-gradient(170deg, rgba(#ed0233, 0.2), rgba(#0041ca, 0.2));
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$black-to-righ: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
 // ---------------------------------
@@ -27,7 +49,8 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-alumni:                    "Alumni Sans", "Arial", sans-serif;
+$ff-roboto:                    "Roboto Condensed", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -47,9 +70,15 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1199:                           1199px;
+$vp-1200:                           1200px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
+
+$mobile-max:                   767px;
+$tablet-max:                   1199px;
+
 
 // Retina
 // ---------------------------------

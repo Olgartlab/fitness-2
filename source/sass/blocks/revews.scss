@@ -1,0 +1,157 @@
+.reviews__wrapper {
+  width: 560px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+
+  @include vp-1199 {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    width: 566px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    padding-bottom: 69px;
+  }
+}
+
+.reviews__wrapper h2 {
+  margin: 0;
+  color: $color-primary;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 36px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    padding-bottom: 43px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+line-height: 38px;
+padding-bottom: 43px;
+  }
+}
+
+.reviews__slider {
+  height: 242px;
+  overflow: hidden;
+
+  @include vp-767 {
+    height: 335px;
+  }
+}
+
+.reviews__slide {
+  background-color: $color-resolution-blue;
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  padding: 62px;
+  padding-top: 59px;
+  display: flex;
+  width: 560px;
+  flex-shrink: 0;
+
+  @include vp-767 {
+    padding: 40px 25px;
+    flex-direction: column;
+  }
+}
+
+.reviews__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+
+  @include vp-767 {
+    width: 68px;
+    height: 68px;
+    margin-left: 16px;
+  }
+}
+
+.reviews__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviews__content {
+  width: 328px;
+  margin-left: auto;
+
+  @include vp-767 {
+    width: auto;
+  }
+}
+
+.reviews__content h3 {
+  margin: 0;
+  padding-bottom: 16px;
+  font-family: $ff-roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+
+  @include vp-767 {
+    padding-bottom: 27px;
+    padding-left: 99px;
+    margin-top: -59px;
+  }
+}
+
+.reviews__content p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.reviews__button {
+  position: absolute;
+  top: 56%;
+  width: 17px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  @include hover {
+    opacity: 50%;
+  }
+
+  @include vp-1199 {
+    top: 55%;
+  }
+
+  @include vp-767 {
+    top: 55.5%;
+    width: 11px;
+    height: 19px;
+    background-size: contain;
+  }
+
+  &--prev {
+    left: -56px;
+    rotate: 180deg;
+  }
+
+  &--next {
+    right: -57px;
+  }
+}
