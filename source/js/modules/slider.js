@@ -50,6 +50,7 @@ const initSwipers = () => {
       loop:false,
       slidesPerView: 1,
       spaceBetween: 10,
+      slidesPerGroup: 1,
 
     });
 

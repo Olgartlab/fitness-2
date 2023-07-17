@@ -3038,6 +3038,7 @@ svg {
     grid-template-columns: -webkit-max-content 1fr;
     grid-template-columns: max-content 1fr;
     padding-bottom: 31px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
@@ -3147,6 +3148,11 @@ svg {
 
 .promo__img-wrapper {
   background-color: #0041ca;
+}
+@media (max-width: 1199px) {
+  .promo__img-wrapper {
+    width: 399px;
+  }
 }
 
 .promo__sale-list {
@@ -3569,6 +3575,12 @@ svg {
   .reviews__slider {
     height: 335px;
   }
+}
+
+.reviews__slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .reviews__slide {
