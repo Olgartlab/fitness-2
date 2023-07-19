@@ -326,6 +326,7 @@
     @include vp-1199 {
       transform: translateX(10px);
     }
+
     @include vp-767 {
       transform: translateX(10px);
       font-size: 43px;
@@ -377,6 +378,7 @@
     color: rgba(255, 255, 255, 0.69);
     outline: none;
   }
+
   &:disabled {
     opacity: 0.3;
   }

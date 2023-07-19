@@ -39,7 +39,7 @@
       <section class="hero">
         <div class="hero__content-wrapper container">
           <div class="hero__description">
-            <span class="hero__text">Омск</span>
+            <span>Омск</span>
             <h1>Фитнес центр</h1>
 
             <ul class="hero__list">
@@ -115,7 +115,8 @@
               </picture>
 
               <button class="video__button" aria-label="Воспроизведение видео" data-video-button>
-                <svg aria-hidden="true" focusable="false" width="13" height="15" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="13" height="15" viewBox="0 0 13 15"
+                  xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#video-play"></use>
                 </svg>
               </button>
@@ -472,8 +473,8 @@
                 </li>
               </ul>
             </div>
-            <div class="coaches__button coaches__button--prev swiper-button-prev"></div>
-            <div class="coaches__button coaches__button--next swiper-button-next"></div>
+            <button class="coaches__button coaches__button--prev swiper-button-prev"></button>
+            <button class="coaches__button coaches__button--next swiper-button-next"></button>
           </div>
         </div>
       </section>
@@ -481,67 +482,66 @@
 
       <section class="advantages">
         <div class="container advantages__container">
-          <div class="advantages__wrapper">
-            <h2>Наши преимущества</h2>
-            <ul class="advantages__list">
-              <li class="advantages__item">
-                <div class="advantages__value">
-                  <p>900</p>
-                  <span>кв/м</span>
-                </div>
-                <div class="advantages__description">
-                  <h3>Площадь</h3>
-                  <p>Занимайтесь без очередей и&nbsp;толпучки</p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__value">
-                  <p>70</p>
-                  <span>машин</span>
-                </div>
-                <div class="advantages__description">
-                  <h3>Собственная парковка</h3>
-                  <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
-                </div>
-              </li>
-              <li class="advantages__item advantages__item--middle">
-                <div class="advantages__value">
-                  <p>100</p>
-                  <span>Тренажеров</span>
-                </div>
-                <div class="advantages__description">
-                  <p>Современные тренажеры на&nbsp;все группы мышц</p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__value">
-                  <p>350</p>
-                  <span>мест</span>
-                </div>
-                <div class="advantages__description">
-                  <h3>Комфорт</h3>
-                  <p>
-                    Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры
-                  </p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__value advantages__value--plus">
-                  <p>5+</p>
-                  <span>лет</span>
-                </div>
-                <div class="advantages__description">
-                  <h3>Тренерский опыт</h3>
-                  <p>
-                    Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <h2>Наши преимущества</h2>
+          <ul class="advantages__list advantages__wrapper">
+            <li class="advantages__item advantages__item--middle">
+              <div class="advantages__value">
+                <span>100</span>
+                <span>Тренажеров</span>
+              </div>
+              <div class="advantages__description">
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
+              </div>
+            </li>
+
+            <li class="advantages__item">
+              <div class="advantages__value">
+                <span>900</span>
+                <span>кв/м</span>
+              </div>
+              <div class="advantages__description">
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__value">
+                <span>70</span>
+                <span>машин</span>
+              </div>
+              <div class="advantages__description">
+                <h3>Собственная парковка</h3>
+                <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+              </div>
+            </li>
+
+            <li class="advantages__item">
+              <div class="advantages__value">
+                <span>350</span>
+                <span>мест</span>
+              </div>
+              <div class="advantages__description">
+                <h3>Комфорт</h3>
+                <p>
+                  Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__value advantages__value--plus">
+                <span>5+</span>
+                <span>лет</span>
+              </div>
+              <div class="advantages__description">
+                <h3>Тренерский опыт</h3>
+                <p>
+                  Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-
 
       <section class="promo" id="promo">
         <div class="container">
@@ -607,7 +607,9 @@
                   <li class="faq__item" data-tabs="element">
                     <ul class="accordion" id="accordion" data-accordion="parent" tabindex="0">
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Как стать членом фитнес-центра?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Как стать членом фитнес-центра?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>При первом посещении и покупке абонемента, необходимо заполнить
                             анкету и подписать договор.
@@ -618,21 +620,26 @@
                       </li>
 
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Где можно посмотреть расписание?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Где можно посмотреть расписание?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
                       </li>
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Есть кулеры в центре? Предоставляются
-                          полотенца?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Есть кулеры в центре? Предоставляются полотенца?</h3><button
+                            data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
                       </li>
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Сколько тренеров работает в клубе и какова их
-                          квалификация?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
@@ -643,7 +650,9 @@
                   <li class="faq__item" data-tabs="element">
                     <ul class="accordion" data-accordion="parent" data-single tabindex="0">
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Занятия с тренером входят в абонемент?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Занятия с тренером входят в абонемент?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>При посещении тренажерного зала вам необходимо оплачить занятия с
                             тренером отдельно. В зале
@@ -653,21 +662,27 @@
                         </div>
                       </li>
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Можно ли заморозить абонемент?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Можно ли заморозить абонемент?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
                       </li>
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Есть ли лимит по посещениям тренажерного зала и групповых
-                          занятий?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Есть ли лимит по посещениям тренажерного зала и групповых
+                            занятий?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
                       </li>
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Что такое семейный доступ и доступ для
-                          друзей?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Что такое семейный доступ и доступ для
+                            друзей?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
@@ -679,8 +694,10 @@
                   <li class="faq__item" data-tabs="element">
                     <ul class="accordion" data-accordion="parent" data-single tabindex="0">
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Предлагает ли клуб услуги по консультированию по вопросам
-                          питания?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Предлагает ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам
+                            питания?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему
                             нутрициологу. Специалист уточнит
@@ -690,21 +707,27 @@
                       </li>
 
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Проводятся ли в клубе какие-либо мероприятия или
-                          соревнования?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Проводятся ли в клубе какие-либо мероприятия или
+                            соревнования?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
                       </li>
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Можно ли приобрести в центре спортивное
-                          питание?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Можно ли приобрести в центре спортивное
+                            питание?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
                       </li>
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Есть ли в центре детская комната?<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Есть ли в центре детская комната?</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
@@ -712,34 +735,39 @@
                     </ul>
                   </li>
 
-
                   <li class="faq__item" data-tabs="element">
                     <ul class="accordion" data-accordion="parent" data-single tabindex="0">
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Вопрос 1<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Вопрос 1</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ 1</p>
                         </div>
                       </li>
 
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Вопрос 2<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Вопрос 2</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
                       </li>
 
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Вопрос 3<span></span></button>
+                        <div class="accordion__question">
+                          <h3>Вопрос 3</h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
                       </li>
 
                       <li class="accordion__element" data-accordion="element">
-                        <button data-accordion="button">Вопрос 4 <span></span></button>
-
-
+                        <div class="accordion__question">
+                          <h3>Вопрос 4 </h3><button data-accordion="button"></button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
                         </div>
@@ -752,7 +780,6 @@
           </div>
         </div>
       </section>
-
 
 
       <section class="reviews">
@@ -833,16 +860,16 @@
                 </li>
               </ul>
             </div>
-            <div class="reviews__button reviews__button--prev swiper-button-prev" aria-label="Предыдущий слайд.">
+            <button class="reviews__button reviews__button--prev swiper-button-prev" aria-label="Предыдущий слайд.">
               <svg class="reviews__icon reviews__icon--prev" width="18" height="34">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
-            </div>
-            <div class="reviews__button reviews__button--next swiper-button-next" aria-label="Следующий слайд.">
+            </button>
+            <button class="reviews__button reviews__button--next swiper-button-next" aria-label="Следующий слайд.">
               <svg class="reviews__icon reviews__icon--next" width="18" height="34">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </section>
@@ -852,20 +879,18 @@
         <div class="connection__wrapper">
           <div class="connection__form" data-form-validate data-callback="base">
             <h2>Бесплатное занятие</h2>
-            <form class="form" action="https://echo.htmlacademy.ru"
-              method="post">
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
               <div class="form__wrapper">
                 <div class="form__input-wrapper" data-validate-type="text" data-limitation="name" data-required>
                   <label class="visually-hidden" for="user-name">Имя</label>
-                  <input  type="text"
-                   name="name" id="user-name" autocomplete="off" placeholder="Имя" required
+                  <input type="text" name="name" id="user-name" autocomplete="off" placeholder="Имя" required
                     pattern="^[a-zA-Zа-яА-Я\s]+$">
                 </div>
-                <div class="form__input-wrapper"  data-validate-type="phone" data-required>
+                <div class="form__input-wrapper" data-validate-type="phone" data-required>
                   <label class="visually-hidden" for="user-phone">Телефон</label>
-                  <input type="tel" id="user-phone"  name="phone" autocomplete="off" placeholder="Телефон" title="+79991234567"
-                    required pattern="^\+?[\s\-\(\)0-9]{7,19}$">
+                  <input type="tel" id="user-phone" name="phone" autocomplete="off" placeholder="Телефон"
+                    title="+79991234567" required pattern="^\+?[\s\-\(\)0-9]{7,19}$">
                 </div>
               </div>
 

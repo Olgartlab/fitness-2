@@ -71,14 +71,11 @@
 
   @include vp-1199 {
     height: 294px;
-
   }
 
   @include vp-767 {
     height: 274px;
-
   }
-
 }
 
 .coaches__item:hover .coaches__overlay,
@@ -113,7 +110,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
+  color: $color-default-white;
   background-color: rgba(16, 38, 84, 0.89);
   width: 100%;
   height: 100%;
@@ -158,10 +155,9 @@
 }
 
 .coaches__item img {
-height:100% ;
-width: 100%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-
 }
 
 .coaches__button {
@@ -191,9 +187,8 @@ width: 100%;
 
   &--prev {
     left: -56px;
-    background-image: url(../../img/sprite/arrow.svg);
+    background-image: url("../../img/sprite/arrow.svg");
     rotate: 180deg;
-
 
     @include vp-1199 {
       left: -1px;
@@ -202,7 +197,7 @@ width: 100%;
 
   &--next {
     right: -57px;
-    background-image: url(../../img/sprite/arrow.svg);
+    background-image: url("../../img/sprite/arrow.svg");
 
     @include vp-1199 {
       right: 0;

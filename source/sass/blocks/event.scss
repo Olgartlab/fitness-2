@@ -51,7 +51,6 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  margin: 0;
 }
 
 .event__item:last-child {
@@ -69,7 +68,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 47px;
-  display: flex;
   max-width: min-content;
   padding-left: 11px;
   padding-top: 6px;
@@ -104,7 +102,7 @@
 }
 
 .event__item dt {
-  color: #fff;
+  color: $color-default-white;
   padding-left: 11px;
 
   font-size: 18px;
@@ -118,11 +116,11 @@
     padding-left: 7px;
   }
 }
+
 .event__item span {
-  color: #fff;
+  color: $color-default-white;
   padding-left: 5px;
   padding-top: 7px;
-
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -183,7 +181,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 14px;
-  letter-spacing: 0.049em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   @include vp-1199 {

@@ -29,6 +29,7 @@
     padding: 64px 15px 69px;
   }
 }
+
 .connection__form h2 {
   margin: 0;
   color: $color-default-white;
@@ -36,7 +37,7 @@
   font-size: 54px;
   font-weight: 800;
   line-height: 84.24px;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.04em;
 
   @include vp-1199 {
     font-size: 42px;
@@ -46,9 +47,9 @@
 
   @include vp-767 {
     font-size: 32px;
-line-height: 38px;
-padding-bottom: 17px;
-letter-spacing: 0.023em;
+    line-height: 38px;
+    padding-bottom: 17px;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -75,7 +76,7 @@ letter-spacing: 0.023em;
   font-style: normal;
   font-weight: 600;
   line-height: 65px;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.04em;
 
   @include vp-1199 {
     font-size: 42px;
@@ -143,6 +144,6 @@ letter-spacing: 0.023em;
 
   @include vp-1199 {
     font-size: 18px;
-    line-height: 27.422px;
+    line-height: 27.42px;
   }
 }
