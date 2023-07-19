@@ -19,9 +19,11 @@
   }
 
   @include vp-767 {
-    flex-flow: column nowrap;
+    display: block;
+    column-count: 2;
+    column-gap: 30px;
     max-width: 500px;
-    padding-top: 44px;
+    padding-top: 48px;
     padding-bottom: 51px;
   }
 }
@@ -33,9 +35,8 @@
   }
 
   @include vp-767 {
-    position: absolute;
-    top: 48px;
-    left: 15px;
+    display: block;
+    padding-bottom: 15px;
   }
 }
 
@@ -64,10 +65,8 @@
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 19px;
-    grid-auto-flow: column;
-    grid-template-rows: auto auto auto;
+    display: block;
+    margin-bottom: 0;
   }
 }
 
@@ -121,6 +120,11 @@
   grid-template-columns: repeat(3, max-content);
   column-gap: 11px;
   align-items: center;
+
+  @include vp-767 {
+    column-span: all;
+    padding-top: 19px;
+  }
 }
 
 .footer__social-item {
