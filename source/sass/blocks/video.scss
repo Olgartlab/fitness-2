@@ -55,7 +55,8 @@
 }
 
 .video__button svg {
-  transform: translate(3px, 2px);
+  margin: auto;
+  display: block;
   color: $color-default-white;
 
   @include vp-1199 {
@@ -86,6 +87,9 @@
 .video iframe {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   @include vp-767 {
     margin-top: 40px;

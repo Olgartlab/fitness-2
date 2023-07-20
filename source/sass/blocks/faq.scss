@@ -90,17 +90,17 @@
     outline: none;
   }
 
-  &:active {
-    border: none;
-    background-image: $button;
-    color: rgba(255, 255, 255, 0.69);
-    outline: none;
-    padding: 16px;
-  }
-
   &:disabled {
     opacity: 0.3;
   }
+}
+
+.faq__control.is-active {
+  border: none;
+  background-image: $button;
+  color: rgba(255, 255, 255, 0.69);
+  outline: none;
+  padding: 16px;
 }
 
 .faq__content {

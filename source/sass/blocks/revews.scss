@@ -127,16 +127,38 @@
 
 .reviews__button {
   position: absolute;
-  top: 56%;
-  width: 17px;
-  height: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
   border: none;
   background-color: transparent;
-  background-repeat: no-repeat;
   cursor: pointer;
 
-  @include hover {
-    opacity: 50%;
+  svg {
+    margin: auto;
+
+    @include vp-767 {
+      width: 11px;
+      height: 19px;
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+    border: 1px solid $color-primary;
+  }
+
+  &:active {
+    background-color: $color-primary;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
   }
 
   @include vp-1199 {
@@ -144,26 +166,28 @@
   }
 
   @include vp-767 {
-    top: 59%;
     width: 11px;
     height: 19px;
     background-size: contain;
   }
 
   &--prev {
-    left: -56px;
+    top: 47%;
+    left: -77px;
     rotate: 180deg;
 
     @include vp-767 {
-      left: -23px;
+      top: 56%;
+      left: -29px;
     }
   }
 
   &--next {
-    right: -57px;
+    top: 58.5%;
+    right: -75px;
 
     @include vp-767 {
-      right: -21px;
+      right: -30px;
     }
   }
 }

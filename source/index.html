@@ -11,11 +11,11 @@
   <link rel="preload" href="fonts/alumni-sans-semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="favicon/favicon.ico"> <!-- 32×32 -->
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="favicon/manifest.webmanifest">
 
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -595,7 +595,7 @@
           <div class="faq__wrapper">
             <h2>Вопросы и ответы</h2>
             <div class="faq__tabs" data-tabs="parent">
-              <div class="faq__controls" data-tabs="controls">
+              <div class="faq__controls" data-tabs="controls" data-delay="300">
                 <button class="faq__control btn is-active" type="button" data-tabs="control">Центр</button>
                 <button class="faq__control btn" type="button" data-tabs="control">Абонемент</button>
                 <button class="faq__control btn" type="button" data-tabs="control">Услуги</button>
@@ -605,7 +605,7 @@
               <div class="faq__content" data-tabs="content">
                 <ul class="faq__list">
                   <li class="faq__item" data-tabs="element">
-                    <ul class="accordion" id="accordion" data-accordion="parent" tabindex="0">
+                    <ul class="accordion" data-accordion="parent">
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Как стать членом фитнес-центра?</h3><button data-accordion="button"></button>
@@ -648,7 +648,7 @@
                   </li>
 
                   <li class="faq__item" data-tabs="element">
-                    <ul class="accordion" data-accordion="parent" data-single tabindex="0">
+                    <ul class="accordion" data-accordion="parent" data-single>
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Занятия с тренером входят в абонемент?</h3><button data-accordion="button"></button>
@@ -692,7 +692,7 @@
 
 
                   <li class="faq__item" data-tabs="element">
-                    <ul class="accordion" data-accordion="parent" data-single tabindex="0">
+                    <ul class="accordion" data-accordion="parent" data-single>
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Предлагает ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам
@@ -736,7 +736,7 @@
                   </li>
 
                   <li class="faq__item" data-tabs="element">
-                    <ul class="accordion" data-accordion="parent" data-single tabindex="0">
+                    <ul class="accordion" data-accordion="parent" data-single>
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Вопрос 1</h3><button data-accordion="button"></button>
