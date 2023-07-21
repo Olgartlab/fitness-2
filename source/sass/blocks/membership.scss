@@ -361,6 +361,7 @@
   letter-spacing: 0.03em;
   width: 100%;
   justify-content: center;
+  user-select: none;
 
   &:hover,
   &:focus-visible {

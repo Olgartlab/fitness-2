@@ -55,6 +55,7 @@
 
 .connection__contact {
   padding: 57px 76px 21px 120px;
+  padding-right: calc(50vw - 580px);
   border-top: 1px solid $color-primary;
   font-family: $ff-roboto;
 

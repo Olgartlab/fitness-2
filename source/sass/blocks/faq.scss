@@ -68,6 +68,7 @@
   text-transform: none;
   font-weight: 500;
   line-height: 21px;
+  user-select: none;
 
   @include vp-1199 {
     margin: 0;
