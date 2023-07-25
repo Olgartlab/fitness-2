@@ -21,6 +21,16 @@
 }
 
 .header__logo {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+
   @include vp-1199 {
     display: flex;
     align-items: center;
@@ -51,6 +61,15 @@
   letter-spacing: 0.03em;
   color: $color-default-white;
   align-self: start;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 
   @include vp-1199 {
     font-size: 24px;

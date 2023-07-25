@@ -157,3 +157,15 @@
     line-height: 27.42px;
   }
 }
+
+.connection__info-tel:hover,
+.connection__info-tel:focus-visible,
+.connection__info-link:hover,
+.connection__info-link:focus-visible {
+  opacity: 0.7;
+}
+
+.connection__info-tel:active,
+.connection__info-link:active {
+  opacity: 0.4;
+}

@@ -186,6 +186,18 @@
   text-transform: uppercase;
   user-select: none;
 
+  &:hover,
+  &:focus-visible {
+    color: $color-secondary;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+    background-color: $color-default-white;
+  }
+
   @include vp-1199 {
     border: 2px solid $color-default-white;
     font-size: 10px;

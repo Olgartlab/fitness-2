@@ -17,7 +17,8 @@
   }
 
   &:hover,
-  &:focus-visible {
+  &:focus-visible,
+  &:active {
     background-image: none;
     background-color: $color-default-white;
     outline: 0;
@@ -29,7 +30,12 @@
 
   &:active {
     width: 58px;
-  height: 58px;
+    height: 58px;
+
+    @include vp-1199 {
+      width: 46px;
+      height: 46px;
+    }
   }
 
   &:disabled {
@@ -73,7 +79,8 @@
 }
 
 .video__button:hover svg,
-.video__button:focus-visible svg {
+.video__button:focus-visible svg,
+.video__button:active svg {
   color: $color-primary;
 }
 

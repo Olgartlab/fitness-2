@@ -81,17 +81,12 @@
 
 .form__input-wrapper.is-invalid input {
   border-bottom: 1px solid $color-form-err;
-}
-
-
-.form__input-wrapper .input-message.is-invalid {
-  color: red;
-}
-
-.form__input-wrapper.is-invalid input {
   margin-bottom: 3px;
 }
 
+.form__input-wrapper .input-message.is-invalid {
+  color: $color-form-err;
+}
 
 .form__button {
   color: $color-default-white;
@@ -117,5 +112,6 @@
 
   &:active {
     color: $color-primary;
+    background-color: $color-default-white;
   }
 }

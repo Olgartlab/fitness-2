@@ -150,6 +150,10 @@
     border: none;
   }
 
+  &:active {
+    opacity: 1;
+  }
+
   &:disabled {
     opacity: 0.3;
   }
@@ -167,8 +171,11 @@
 
     &:focus-visible {
       outline: 1px solid $color-resolution-blue;
-      outline-offset: 2px;
       border: none;
+    }
+
+    &:active {
+      opacity: 1;
     }
   }
 }

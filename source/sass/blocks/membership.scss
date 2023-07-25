@@ -101,8 +101,31 @@
   font-size: 20px;
   line-height: 23px;
   color: $color-sapphire;
+  background-color: $color-transparent;
   opacity: 0.5;
   text-transform: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -13px;
+    left: 0;
+    background-color: $color-sapphire;
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    opacity: 1;
+
+    &::after {
+      background-color: $color-crimson;
+      opacity: 1;
+    }
+  }
 
   @include vp-1199 {
     font-size: 18px;
@@ -129,18 +152,6 @@
   }
 
   &.is-active {
-    color: $color-sapphire;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 2px;
-      bottom: -13px;
-      left: 0;
-      background-color: $color-crimson;
-    }
-
     @include vp-767 {
       &::after {
         bottom: -9px;
@@ -155,19 +166,6 @@
     &::after {
       bottom: -10px;
     }
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:focus-visible {
-    outline-color: $color-crimson;
-  }
-
-  &:active {
-    box-shadow: none;
-    opacity: 1;
   }
 }
 

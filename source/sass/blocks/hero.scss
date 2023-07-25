@@ -144,6 +144,19 @@
   padding: 21px 54px;
   letter-spacing: 0.05em;
   user-select: none;
+  font-weight: 700;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-secondary;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+    background-color: $color-default-white;
+  }
 
   @include vp-1199 {
     padding: 21px 32px;

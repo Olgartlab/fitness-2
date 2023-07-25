@@ -172,8 +172,14 @@
   background-color: transparent;
   cursor: pointer;
 
+  @include vp-767 {
+    width: 27px;
+    height: 27px;
+  }
+
   svg {
     margin: auto;
+    display: block;
 
     @include vp-767 {
       width: 11px;
@@ -200,12 +206,6 @@
     top: 55%;
   }
 
-  @include vp-767 {
-    width: 11px;
-    height: 19px;
-    background-size: contain;
-  }
-
   &--prev {
     left: -77px;
     rotate: 180deg;
@@ -216,8 +216,8 @@
     }
 
     @include vp-767 {
-      top: 53%;
-      left: 3px;
+      top: 51%;
+      left: -9px;
     }
   }
 
@@ -231,8 +231,8 @@
     }
 
     @include vp-767 {
-      right: 4px;
-      top: 58%;
+      right: -8px;
+      top: 59%;
     }
   }
 }
