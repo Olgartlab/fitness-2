@@ -1,10 +1,10 @@
 .advantages {
-  padding-top: 120px;
+  padding-top: 112px;
   padding-bottom: 61px;
   background-color: #f8f9fc;
 
   @media (max-width: 1199px) {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 92px;
   }
 
@@ -22,7 +22,6 @@
 
 .advantages__container h2 {
   margin: 0;
-  padding-left: 8px;
   text-align: center;
   font-family: $ff-alumni;
   font-style: normal;
@@ -51,7 +50,7 @@
   gap: 51px 60px;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 27px 0 0;
+  padding: 25px 0 0;
   list-style: none;
   color: $color-sapphire;
   font-family: $ff-roboto;
@@ -98,7 +97,7 @@
     padding-bottom: 47px;
 
     @media (max-width: 1199px) {
-      padding-left: 23px;
+      padding-left: 0;
       padding-bottom: 0;
     }
 

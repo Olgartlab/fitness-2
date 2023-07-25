@@ -32,6 +32,7 @@
 
   @include vp-767 {
     max-width: 100%;
+    padding: 50px 44px;
   }
 }
 
@@ -174,7 +175,7 @@
 .event__button {
   display: block;
   width: 100%;
-  padding: 22px 56px;
+  padding: 23px 56px;
   text-align: center;
   font-family: $ff-roboto;
   font-size: 12px;

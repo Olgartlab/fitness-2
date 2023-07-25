@@ -20,6 +20,7 @@
   &:focus-visible {
     background-image: none;
     background-color: $color-default-white;
+    outline: 0;
 
     &::after {
       background-color: $color-primary;
@@ -27,7 +28,8 @@
   }
 
   &:active {
-    scale: 0.9;
+    width: 58px;
+  height: 58px;
   }
 
   &:disabled {
@@ -70,7 +72,8 @@
   }
 }
 
-.video__button:hover svg {
+.video__button:hover svg,
+.video__button:focus-visible svg {
   color: $color-primary;
 }
 

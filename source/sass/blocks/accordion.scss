@@ -99,7 +99,6 @@
 }
 
 .accordion__element.is-active button {
-  background-color: $color-resolution-blue;
   padding-bottom: 0;
   margin-bottom: 19px;
 
@@ -120,10 +119,6 @@
 
 .accordion__element.is-active button::after {
   display: none;
-}
-
-.accordion__element.is-active button::before {
-  background-color: $color-default-white;
 }
 
 .accordion__element.is-active h3 {

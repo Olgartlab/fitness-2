@@ -58,8 +58,9 @@
 
 .faq__control {
   color: $color-primary;
+  background-color: $color-transparent;
   min-width: 260px;
-  padding: 15px;
+  padding: 17px;
   border: 1px solid $color-primary-light;
   margin-bottom: 10px;
   display: block;
@@ -67,8 +68,9 @@
   font-size: 18px;
   text-transform: none;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 18px;
   user-select: none;
+  letter-spacing: normal;
 
   @include vp-1199 {
     margin: 0;
@@ -89,19 +91,21 @@
     background-image: $button;
     color: $color-default-white;
     outline: none;
+    border: none;
+    padding: 18px;
+  }
+
+  &:active {
+    background-image: $button;
+    color: rgba(255, 255, 255, 0.7);
+    outline: none;
+    border: none;
+    padding: 18px;
   }
 
   &:disabled {
     opacity: 0.3;
   }
-}
-
-.faq__control.is-active {
-  border: none;
-  background-image: $button;
-  color: rgba(255, 255, 255, 0.69);
-  outline: none;
-  padding: 16px;
 }
 
 .faq__content {

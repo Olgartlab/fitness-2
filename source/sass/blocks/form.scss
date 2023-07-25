@@ -16,10 +16,11 @@
   flex-wrap: wrap;
   width: 100%;
   padding-top: 15px;
-  column-gap: 60px;
+  column-gap: 30px;
 
   @include vp-1199 {
     width: 470px;
+    column-gap: 60px;
   }
 
   @include vp-767 {
@@ -82,11 +83,15 @@
   border-bottom: 1px solid $color-form-err;
 }
 
-/*
-.form__input-wrapper.is-invalid .input-message.is-invalid {
+
+.form__input-wrapper .input-message.is-invalid {
   color: red;
 }
-*/
+
+.form__input-wrapper.is-invalid input {
+  margin-bottom: 3px;
+}
+
 
 .form__button {
   color: $color-default-white;
