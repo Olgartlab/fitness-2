@@ -35,8 +35,18 @@
 }
 
 .accordion__element:last-child h3 {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  @include vp-1199 {
+    padding-bottom: 24px;
+    padding-top: 27px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 19px;
+    padding-top: 19px;
+  }
 }
 
 .accordion__question button {
@@ -52,8 +62,10 @@
   margin-left: auto;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: $color-resolution-blue;
+    outline: none;
 
     &::before,
     &::after {
@@ -63,6 +75,8 @@
 
   @include vp-1199 {
     margin-top: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   @include vp-767 {
@@ -101,12 +115,6 @@
 .accordion__element.is-active button {
   padding-bottom: 0;
   margin-bottom: 19px;
-
-  @include vp-767 {
-    position: absolute;
-    top: 37px;
-    right: 0;
-  }
 }
 
 .accordion__element.is-active {
@@ -148,7 +156,8 @@
     padding-right: 25px;
     position: relative;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
     max-width: 100%;
+    margin-bottom: 18px;
   }
 }

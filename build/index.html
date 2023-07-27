@@ -23,7 +23,6 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <!-- <h1 class="visually-hidden">Фитнес центр Supergym.</h1>-->
       <div class="container">
         <nav class="header__nav">
           <a class="header__logo" href="index.html" aria-label="Логотип фитнес центра Supergym">
@@ -37,32 +36,32 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero__content-wrapper container">
+        <div class="hero__content-wrapper">
+          <ul class="hero__list">
+            <li class="hero__item">Тренажёрный зал</li>
+            <li class="hero__item">Групповые занятия</li>
+            <li class="hero__item">Кардио-зона</li>
+          </ul>
           <div class="hero__description">
             <span>Омск</span>
             <h1>Фитнес центр</h1>
-
-            <ul class="hero__list">
-              <li class="hero__item">Тренажёрный зал</li>
-              <li class="hero__item">Групповые занятия</li>
-              <li class="hero__item">Кардио-зона</li>
-            </ul>
-            <a class="hero__link btn" href="#membership">
-              Купить абонемент
-            </a>
           </div>
-          <div class="hero__img-wrapper">
-            <picture>
-              <source type="image/webp" media="(max-width: 1199px)"
-                srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x">
-              <source media="(max-width: 1199px)"
-                srcset="./img/hero/hero-tablet.jpg 1x, ./img/hero/hero-tablet@2x.jpg 2x">
-              <img src="./img/hero/hero-desktop.jpg" srcset="./img/hero/hero-desktop@2x.jpg 2x" width="500" height="556"
-                alt="Спортсмен в футболке супермена.">
-            </picture>
-          </div>
+          <a class="hero__link btn" href="#membership">
+            Купить абонемент
+          </a>
         </div>
+        <div class="hero__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x">
+            <source media="(max-width: 1199px)"
+              srcset="./img/hero/hero-tablet.jpg 1x, ./img/hero/hero-tablet@2x.jpg 2x">
+            <img src="./img/hero/hero-desktop.jpg" srcset="./img/hero/hero-desktop@2x.jpg 2x" width="500" height="556"
+              alt="Спортсмен в футболке супермена.">
+          </picture>
+        </div>
+
       </section>
       <section class="gym">
         <div class=" gym__container container">
@@ -289,7 +288,7 @@
 
             <div class="coaches__swiper swiper">
               <ul class="coaches__list swiper-wrapper">
-                <li class="coaches__item swiper-slide" tabindex="0">
+                <li class="coaches__item swiper-slide">
 
                   <picture>
                     <source type="image/webp" srcset="./img/coaches/coach-1.webp 1x, ./img/coaches/coach-1@2x.webp 2x">
@@ -310,7 +309,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="coaches__item swiper-slide" tabindex="0">
+                <li class="coaches__item swiper-slide">
 
                   <picture>
                     <source type="image/webp" srcset="./img/coaches/coach-2.webp 1x, ./img/coaches/coach-2@2x.webp 2x">
@@ -333,7 +332,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="coaches__item swiper-slide" tabindex="0">
+                <li class="coaches__item swiper-slide">
 
                   <picture>
                     <source type="image/webp" srcset="./img/coaches/coach-3.webp 1x, ./img/coaches/coach-3@2x.webp 2x">
@@ -356,7 +355,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="coaches__item swiper-slide" tabindex="0">
+                <li class="coaches__item swiper-slide">
 
                   <picture>
                     <source type="image/webp" srcset="./img/coaches/coach-4.webp 1x, ./img/coaches/coach-4@2x.webp 2x">
@@ -379,7 +378,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="coaches__item swiper-slide" tabindex="0">
+                <li class="coaches__item swiper-slide">
 
                   <picture>
                     <source type="image/webp" srcset="./img/coaches/coach-4.webp 1x, ./img/coaches/coach-4@2x.webp 2x">
@@ -402,7 +401,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="coaches__item swiper-slide" tabindex="0">
+                <li class="coaches__item swiper-slide">
 
                   <picture>
                     <source type="image/webp" srcset="./img/coaches/coach-4.webp 1x, ./img/coaches/coach-4@2x.webp 2x">
@@ -425,7 +424,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="coaches__item swiper-slide" tabindex="0">
+                <li class="coaches__item swiper-slide">
 
                   <picture>
                     <source type="image/webp" srcset="./img/coaches/coach-4.webp 1x, ./img/coaches/coach-4@2x.webp 2x">
@@ -448,7 +447,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="coaches__item swiper-slide" tabindex="0">
+                <li class="coaches__item swiper-slide">
 
                   <picture>
                     <source type="image/webp" srcset="./img/coaches/coach-4.webp 1x, ./img/coaches/coach-4@2x.webp 2x">
@@ -486,7 +485,6 @@
           </div>
         </div>
       </section>
-
 
       <section class="advantages">
         <div class="container advantages__container">
@@ -616,7 +614,8 @@
                     <ul class="accordion" data-accordion="parent">
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Как стать членом фитнес-центра?</h3><button data-accordion="button"></button>
+                          <h3>Как стать членом фитнес-центра?</h3><button type="button"
+                            data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить
@@ -629,15 +628,7 @@
 
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Где можно посмотреть расписание?</h3><button data-accordion="button"></button>
-                        </div>
-                        <div class="accordion__content" data-accordion="content">
-                          <p>Ответ.</p>
-                        </div>
-                      </li>
-                      <li class="accordion__element" data-accordion="element">
-                        <div class="accordion__question">
-                          <h3>Есть кулеры в&nbsp;центре? Предоставляются полотенца?</h3><button
+                          <h3>Где можно посмотреть расписание?</h3><button type="button"
                             data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
@@ -646,7 +637,17 @@
                       </li>
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</h3><button data-accordion="button"></button>
+                          <h3>Есть кулеры в&nbsp;центре? Предоставляются полотенца?</h3><button type="button"
+                            data-accordion="button"></button>
+                        </div>
+                        <div class="accordion__content" data-accordion="content">
+                          <p>Ответ.</p>
+                        </div>
+                      </li>
+                      <li class="accordion__element" data-accordion="element">
+                        <div class="accordion__question">
+                          <h3>Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</h3><button
+                            type="button" data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -659,7 +660,8 @@
                     <ul class="accordion" data-accordion="parent" data-single>
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3><button data-accordion="button"></button>
+                          <h3>Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3><button type="button"
+                            data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>При посещении тренажерного зала вам необходимо оплачить занятия с
@@ -671,7 +673,8 @@
                       </li>
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Можно&nbsp;ли заморозить абонемент?</h3><button data-accordion="button"></button>
+                          <h3>Можно&nbsp;ли заморозить абонемент?</h3><button type="button"
+                            data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -680,7 +683,7 @@
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых
-                            занятий?</h3><button data-accordion="button"></button>
+                            занятий?</h3><button type="button" data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -689,7 +692,7 @@
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Что такое семейный доступ и&nbsp;доступ для
-                            друзей?</h3><button data-accordion="button"></button>
+                            друзей?</h3><button type="button" data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -704,7 +707,7 @@
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам
-                            питания?</h3><button data-accordion="button"></button>
+                            питания?</h3><button type="button" data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему
@@ -717,7 +720,7 @@
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Проводятся&nbsp;ли в&nbsp;клубе какие-либо мероприятия или
-                            соревнования?</h3><button data-accordion="button"></button>
+                            соревнования?</h3><button type="button" data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -726,7 +729,7 @@
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
                           <h3>Можно&nbsp;ли приобрести в&nbsp;центре спортивное
-                            питание?</h3><button data-accordion="button"></button>
+                            питание?</h3><button type="button" data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -734,7 +737,8 @@
                       </li>
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Есть&nbsp;ли в&nbsp;центре детская комната?</h3><button data-accordion="button"></button>
+                          <h3>Есть&nbsp;ли в&nbsp;центре детская комната?</h3><button type="button"
+                            data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -747,25 +751,22 @@
                     <ul class="accordion" data-accordion="parent" data-single>
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Вопрос 1</h3><button data-accordion="button"></button>
+                          <h3>Есть в&nbsp;фитнес-центре дресс-код?</h3><button type="button"
+                            data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
-                          <p>Ответ 1</p>
+                          <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь
+                            и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки,
+                            майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается
+                            тренироваться босиком, в&nbsp;пляжных или домашних тапочках и т.п., исключения составляют
+                            специальные классы (например, йога, пилатес).</p>
                         </div>
                       </li>
 
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Вопрос 2</h3><button data-accordion="button"></button>
-                        </div>
-                        <div class="accordion__content" data-accordion="content">
-                          <p>Ответ.</p>
-                        </div>
-                      </li>
-
-                      <li class="accordion__element" data-accordion="element">
-                        <div class="accordion__question">
-                          <h3>Вопрос 3</h3><button data-accordion="button"></button>
+                          <h3>Можно&nbsp;ли приводить с&nbsp;собой детей на&nbsp;тренировки?</h3><button type="button"
+                            data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -774,7 +775,18 @@
 
                       <li class="accordion__element" data-accordion="element">
                         <div class="accordion__question">
-                          <h3>Вопрос 4 </h3><button data-accordion="button"></button>
+                          <h3>Какие дополнительные правила посещения центра?</h3><button type="button"
+                            data-accordion="button"></button>
+                        </div>
+                        <div class="accordion__content" data-accordion="content">
+                          <p>Ответ.</p>
+                        </div>
+                      </li>
+
+                      <li class="accordion__element" data-accordion="element">
+                        <div class="accordion__question">
+                          <h3>Нужна&nbsp;ли медицинская справка для посещения залов и бассейна?</h3><button
+                            type="button" data-accordion="button"></button>
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <p>Ответ.</p>
@@ -800,7 +812,7 @@
               <ul class="reviews__slider-wrapper swiper-wrapper">
                 <!-- Slides -->
                 <!-- 1 -->
-                <li class="reviews__slide swiper-slide" tabindex="0">
+                <li class="reviews__slide swiper-slide">
                   <div class="reviews__image">
                     <picture>
                       <source type="image/webp" media="(max-width:767px)"
@@ -822,7 +834,7 @@
                   </div>
                 </li>
                 <!-- 2 -->
-                <li class="reviews__slide swiper-slide" tabindex="0">
+                <li class="reviews__slide swiper-slide">
                   <div class="reviews__image">
                     <picture>
                       <source type="image/webp" media="(max-width:767px)"
@@ -844,7 +856,7 @@
                   </div>
                 </li>
                 <!-- 3 -->
-                <li class="reviews__slide swiper-slide" tabindex="0">
+                <li class="reviews__slide swiper-slide">
                   <div class="reviews__image">
                     <picture>
                       <source type="image/webp" media="(max-width:767px)"
@@ -888,14 +900,15 @@
           <div class="connection__form" data-form-validate data-callback="base">
             <h2>Бесплатное занятие</h2>
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
-
               <div class="form__wrapper">
-                <div class="form__input-wrapper" data-validate-type="text" data-limitation="name" data-message-base="Заполните, пожалуйста, это поле" data-required>
+                <div class="form__input-wrapper" data-validate-type="text" data-limitation="name"
+                  data-message-base="Заполните, пожалуйста, это поле" data-required>
                   <label class="visually-hidden" for="user-name">Имя</label>
                   <input type="text" name="name" id="user-name" autocomplete="off" placeholder="Имя" required
                     pattern="^[a-zA-Zа-яА-Я\s]+$">
                 </div>
-                <div class="form__input-wrapper" data-validate-type="phone" data-message-base="Заполните, пожалуйста, это поле" data-required>
+                <div class="form__input-wrapper" data-validate-type="phone"
+                  data-message-base="Заполните, пожалуйста, это поле" data-required>
                   <label class="visually-hidden" for="user-phone">Телефон</label>
                   <input type="tel" id="user-phone" name="phone" autocomplete="off" placeholder="Телефон"
                     title="+79991234567" required pattern="^\+?[\s\-\(\)0-9]{7,19}$">

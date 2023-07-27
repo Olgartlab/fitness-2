@@ -110,6 +110,18 @@
   }
 }
 
+.faq__control.is-active {
+  background-image: $button;
+  color: $color-default-white;
+  outline: none;
+  border: none;
+  padding: 18px;
+
+  @include vp-767 {
+    padding: 14px;
+  }
+}
+
 .faq__content {
   overflow: hidden;
   position: relative;

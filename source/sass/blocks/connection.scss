@@ -21,7 +21,7 @@
   flex-direction: column;
 
   @include vp-1199 {
-    padding: 60px 130px 70px;
+    padding: 60px 163px 70px 130px;
     background-color: $color-primary;
   }
 
