@@ -164,9 +164,10 @@
 
   &:active {
     background-color: $color-primary;
+
     svg {
       color: $color-default-white;
-      }
+    }
   }
 
   &:disabled {

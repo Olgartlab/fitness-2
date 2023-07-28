@@ -202,23 +202,6 @@
   }
 }
 
-
-.membership__item:hover .membership__item-link {
-  color: $color-default-white;
-  background-image: $button;
-  border: none;
-  padding-top: 26px;
-  padding-bottom: 26px;
-
-}
-
-.membership__item:focus .membership__item-link {
-  background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-  color: $color-default-white;
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
 .membership__item {
   position: relative;
   max-width: 360px;
@@ -243,42 +226,41 @@
   &:focus-visible,
   &:hover {
     outline: none;
+    padding: 56px 70px 57px;
+    border: 7px solid transparent;
+    border-image: $button;
+    border-image-slice: 1;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border: 7px solid transparent;
-      border-image: $button;
-      border-image-slice: 1;
-      pointer-events: none;
+    @include vp-1199 {
+      padding: 56px 111px 57px;
     }
-  }
-
-  h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 29px;
 
     @include vp-767 {
-      font-size: 22px;
-      line-height: 25px;
+      padding: 43px 33px 33px;
     }
   }
+}
 
-  p {
-    margin: 0;
-    margin-bottom: 65px;
+h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
 
-    @include vp-767 {
-      margin-bottom: 53px;
-    }
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+p {
+  margin: 0;
+  margin-bottom: 65px;
+
+  @include vp-767 {
+    margin-bottom: 53px;
   }
 }
 
@@ -374,6 +356,22 @@
   }
 }
 
+.membership__item:hover .membership__item-link {
+  color: $color-default-white;
+  background-image: $button;
+  border: none;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.membership__item:focus-visible .membership__item-link {
+  color: $color-default-white;
+  background-image: $button;
+  border: none;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
 .membership__item-link {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -384,8 +382,8 @@
   justify-content: center;
   user-select: none;
 
-  &:hover,
-  &:focus-visible {
+  &:focus-visible,
+  &:hover {
     background-image: $button;
     color: $color-default-white;
     border: none;
@@ -393,20 +391,58 @@
     padding-bottom: 26px;
     outline: none;
   }
+}
 
-  &:active {
-    border: none;
-    background-image: $button;
-    color: rgba(255, 255, 255, 0.69);
-    outline: none;
-  }
+.membership__item:hover .membership__item-link:hover,
+.membership__item:hover .membership__item-link:focus-visible {
+  background-image: $button;
+  color: $color-default-white;
+  border: none;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  outline: none;
+}
 
-  &:disabled {
-    opacity: 0.3;
-  }
 
-  @include vp-767 {
-    padding-left: 43px;
-    padding-right: 43px;
-  }
+.membership__item:hover .membership__item-link:active {
+  border: none;
+  background-image: $button;
+  color: rgba(255, 255, 255, 0.69);
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.membership__item:hover .membership__item-link:disabled {
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  opacity: 0.3;
+}
+
+.membership__item:focus-visible .membership__item-link:hover,
+.membership__item:focus-visible .membership__item-link:focus-visible {
+  background-image: $button;
+  color: $color-default-white;
+  border: none;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  outline: none;
+}
+
+
+.membership__item:focus-visible .membership__item-link:active {
+  border: none;
+  background-image: $button;
+  color: rgba(255, 255, 255, 0.69);
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.membership__item:focus-visible .membership__item-link:disabled {
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  opacity: 0.3;
 }
