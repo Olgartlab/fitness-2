@@ -205,6 +205,7 @@
 .membership__item {
   position: relative;
   max-width: 360px;
+  min-width: 314px;
   min-height: 448px;
   display: flex;
   flex-direction: column;
@@ -215,6 +216,7 @@
 
   @include vp-1199 {
     max-width: 100%;
+    min-width: auto;
     padding: 63px 118px 64px;
   }
 
@@ -324,6 +326,7 @@ p {
   span {
     color: $color-sapphire;
     transform: translateX(9px);
+    font-family: $ff-rouble;
     font-size: 59px;
 
     @include vp-1199 {

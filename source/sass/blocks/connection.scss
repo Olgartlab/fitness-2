@@ -58,6 +58,7 @@
   padding-right: calc(50vw - 580px);
   border-top: 1px solid $color-primary;
   font-family: $ff-roboto;
+  color: $color-primary;
 
   @include vp-1199 {
     padding: 60px 102px 41px 134px;
@@ -111,6 +112,26 @@
 
 .connection__info-list {
   padding-left: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1px;
+    height: 102px;
+    background-color: #74819c;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include vp-1199 {
+      height: 129px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
 
   @include vp-1199 {
     padding-left: 47px;

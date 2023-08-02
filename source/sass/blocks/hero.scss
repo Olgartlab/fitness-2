@@ -76,7 +76,7 @@
 .hero__img-wrapper img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
 
   @include vp-767 {
     display: none;
@@ -96,6 +96,7 @@
   max-width: 248px;
 
   @include vp-1199 {
+    margin: 0;
     font-size: 72px;
     line-height: 86px;
     max-width: 212px;
@@ -104,7 +105,6 @@
   }
 
   @include vp-767 {
-    margin: 0;
     margin-left: -12px;
     margin-bottom: 22px;
     padding-top: 14px;
@@ -129,6 +129,7 @@
     padding-bottom: 10px;
     margin: 0 0 20px;
     width: 113px;
+    justify-self: end;
   }
 }
 

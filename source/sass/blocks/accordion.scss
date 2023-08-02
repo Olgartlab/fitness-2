@@ -115,6 +115,20 @@
 .accordion__element.is-active button {
   padding-bottom: 0;
   margin-bottom: 19px;
+
+  @include vp-1199 {
+    top: 46px;
+  }
+
+  @include vp-767 {
+    top: 54px;
+  }
+}
+
+.accordion__element:last-child.is-active button {
+  @include vp-1199 {
+    top: 54px;
+  }
 }
 
 .accordion__element.is-active {

@@ -118,6 +118,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  padding-bottom: 10px;
 
   @include vp-1199 {
     max-width: 189px;
@@ -126,6 +127,7 @@
   @include vp-767 {
     min-width: 189px;
     max-width: 100%;
+    text-align: center;
   }
 }
 
@@ -134,6 +136,7 @@
   border-bottom: 1px solid $color-default-white;
   outline-offset: 3px;
   padding: 0;
+  padding-top: 10px;
   margin-top: auto;
   font-weight: 700;
   font-size: 14px;
@@ -170,6 +173,7 @@
     letter-spacing: 0.04em;
     font-size: 12px;
     line-height: 14px;
+    padding-top: 10px;
 
     &:focus-visible {
       outline: 1px solid $color-resolution-blue;
@@ -183,7 +187,7 @@
 }
 
 .promo__img-wrapper {
-  background-color: $color-cobalt;
+  background-color: #c5ddf5;
 
   @include vp-1199 {
     width: 100%;
@@ -202,17 +206,19 @@
 }
 
 .promo__sale-list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   row-gap: 40px;
 
   @include vp-1199 {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     row-gap: 30px;
   }
 }
@@ -224,7 +230,10 @@
   padding: 28px;
   padding-top: 22px;
   display: flex;
+  flex-shrink: 0;
+  flex-grow: 1;
   flex-direction: column;
+  min-height: 211px;
 
   @include vp-1199 {
     min-height: 209px;
