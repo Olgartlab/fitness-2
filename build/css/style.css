@@ -1189,6 +1189,13 @@ button.swiper-pagination-bullet {
   font-display: swap;
   src: url("../fonts/roboto-condensed-bold.woff2") format("woff2");
 }
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rouble";
+  font-display: swap;
+  src: url("../fonts/rouble.woff2") format("woff2");
+}
 *,
 *::before,
 *::after {
@@ -1471,6 +1478,27 @@ ul {
   }
 }
 
+.header__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__phone-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__logo {
+  padding-right: 10px;
+}
 .header__logo:hover, .header__logo:focus-visible {
   opacity: 0.7;
 }
@@ -1485,6 +1513,12 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo {
+    padding-bottom: 0;
   }
 }
 
@@ -1516,6 +1550,7 @@ ul {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  padding-right: 10px;
 }
 .header__phone:hover, .header__phone:focus-visible {
   opacity: 0.7;
@@ -1809,6 +1844,7 @@ ul {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.03em;
+  color: #102654;
 }
 @media (max-width: 1199px) {
   .gym__description h2 {
@@ -2083,6 +2119,7 @@ ul {
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+  color: #102654;
 }
 @media (max-width: 1199px) {
   .membership__wrapper h2 {
@@ -2410,24 +2447,24 @@ p {
 }
 .membership__item-text span {
   color: #102654;
-  -webkit-transform: translateX(9px);
-      -ms-transform: translateX(9px);
-          transform: translateX(9px);
+  -webkit-transform: translate(14px, -7px);
+      -ms-transform: translate(14px, -7px);
+          transform: translate(14px, -7px);
   font-family: "Rouble", "Arial", sans-serif;
   font-size: 59px;
 }
 @media (max-width: 1199px) {
   .membership__item-text span {
-    -webkit-transform: translateX(10px);
-        -ms-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translate(14px, -7px);
+        -ms-transform: translate(14px, -7px);
+            transform: translate(14px, -7px);
   }
 }
 @media (max-width: 767px) {
   .membership__item-text span {
-    -webkit-transform: translateX(10px);
-        -ms-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translate(10px, -5px);
+        -ms-transform: translate(10px, -5px);
+            transform: translate(10px, -5px);
     font-size: 43px;
   }
 }
@@ -2584,6 +2621,7 @@ p {
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+  color: #102654;
 }
 @media (max-width: 1199px) {
   .coaches__container h2 {
@@ -2661,7 +2699,7 @@ p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  overflow: scroll;
+  overflow-y: auto;
 }
 @media (max-width: 767px) {
   .coaches__overlay {
@@ -2833,6 +2871,7 @@ p {
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+  color: #102654;
 }
 @media (max-width: 1199px) {
   .advantages__container h2 {
@@ -3564,6 +3603,11 @@ p {
   }
 }
 
+.promo__img-wrapper img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (max-width: 1199px) {
   .promo__img-wrapper img {
     width: 100%;
@@ -3616,9 +3660,6 @@ p {
   display: flex;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -4096,6 +4137,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 560px;
+  height: auto;
 }
 @media (max-width: 767px) {
   .reviews__slide {
